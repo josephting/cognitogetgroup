@@ -1,0 +1,70 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cognitogetgroup-dev-93e3c-authRole",
+      "UnauthRoleArn": "arn:aws:iam::300086359315:role/amplify-cognitogetgroup-dev-93e3c-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::300086359315:role/amplify-cognitogetgroup-dev-93e3c-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-cognitogetgroup-dev-93e3c-deployment",
+      "UnauthRoleName": "amplify-cognitogetgroup-dev-93e3c-unauthRole",
+      "StackName": "amplify-cognitogetgroup-dev-93e3c",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:300086359315:stack/amplify-cognitogetgroup-dev-93e3c/9eab4240-7572-11ef-823c-0ea0712a1f7d",
+      "AmplifyAppId": "d8u7et216fmz9"
+    }
+  },
+  "auth": {
+    "cognitogetgroup49e19b89": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cognitogetgroup-dev-93e3c-deployment/amplify-cfn-templates/auth/cognitogetgroup49e19b89-cloudformation-template.json",
+        "logicalId": "authcognitogetgroup49e19b89"
+      },
+      "lastPushTimeStamp": "2024-09-18T04:05:32.027Z",
+      "output": {
+        "UserPoolId": "ap-northeast-1_EKJqGXwCi",
+        "AppClientIDWeb": "2bc7to84gjhpqgp744uaonu2ce",
+        "AppClientID": "t716h2q8j9ddtn65bffqk6ihb",
+        "IdentityPoolId": "ap-northeast-1:a96706fc-0840-4e2f-ba9f-8a22f0c95c95",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-1:300086359315:userpool/ap-northeast-1_EKJqGXwCi",
+        "IdentityPoolName": "cognitogetgroup49e19b89_identitypool_49e19b89__dev",
+        "UserPoolName": "cognitogetgroup49e19b89_userpool_49e19b89"
+      },
+      "lastPushDirHash": "Q+E96IprPBg+fylk3GmKG8NLD2E="
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cognitogetgroup-dev-93e3c-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2024-09-18T04:05:32.230Z",
+      "output": {},
+      "lastPushDirHash": "BNUjeuOtcJFbEcHCJt9WtsD1o04="
+    }
+  }
+}
